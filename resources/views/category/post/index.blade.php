@@ -13,7 +13,7 @@
                             </a>
                         </div>
                         <div class="d-flex justify-content-between">
-                            <a href="{{route('category.post.index', $category->id)}}"><p class="blog-post-category">{{$category->title}}</p></a>
+                            <a style="text-decoration: none" href="{{route('category.post.index', $category->id)}}"><p class="blog-post-category">{{$category->title}}</p></a>
 {{--                            {{$category->title}}--}}
                                     @auth()
                             <form action="{{route('post.like.store', $post->id)}}" method="POST">

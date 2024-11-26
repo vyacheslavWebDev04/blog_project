@@ -51,7 +51,7 @@
                             </li>
                         @endif
                     @else
-                        <div>{{auth()->user()->name}}</div>
+                        <div></div>
                         <form action="{{route('logout')}}" method="POST">
                             @csrf
                             <input class="btn btn-outline-primary " type="submit" value="Выйти">
