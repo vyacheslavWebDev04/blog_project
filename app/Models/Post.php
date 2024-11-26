@@ -16,6 +16,8 @@ class Post extends Model
     protected $guarded = [];
 
     protected $withCount = ['likedUsers'];
+//    оптимизация запросов
+    protected $with = ['category'];
 
     public function tags()
     {
